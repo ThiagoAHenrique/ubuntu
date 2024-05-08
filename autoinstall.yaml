@@ -11,12 +11,8 @@ autoinstall:
   # This adds the default snaps found on a 24.04 Ubuntu Desktop system.
   # Any desired additional snaps may also be listed here.
   snaps:
-    - name: firefox
-    - name: gnome-3-38-2004
-    - name: gtk-common-themes
-    - name: snap-store
-    - name: snapd-desktop-integration
-
+    - name: 
+  
   # User creation can occur in one of 3 ways:
   # 1. Create a user using this `identity` section.
   # 2. Create users as documented in cloud-init inside the user-data section,
@@ -28,14 +24,14 @@ autoinstall:
     username: admcorp.ame
     # A password hash is needed. `mkpasswd --method=SHA-512` can help.
     # mkpasswd can be found in the package 'whois'
-    password: 'Infr@c0rp@AME'
+    password: Infr@c0rp@AME
     hostname: BR..OTNL....
 
   # Subiquity will, by default, configure a partition layout using LVM.
   # The 'direct' layout method shown here will produce a non-LVM result.
   storage:
     layout:
-      name: lvm
+      name: lvm and encryption
 
   # Ubuntu Desktop uses the hwe flavor kernel by default.
   early-commands:
