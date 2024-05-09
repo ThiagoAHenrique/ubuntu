@@ -20,7 +20,4 @@ snaps:
     - vim
 
   late-commands:
-    - curtin in-target -- apt update && sudo apt install microsoft-edge-stable -y
-    - curtin in-target -- apt install intune-portal -y
-    - curtin in-target -- apt-get update -y
-    - curtin in-target -- apt-get upgrade -y
+ 
