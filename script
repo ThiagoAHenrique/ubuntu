@@ -1,30 +1,25 @@
 autoinstall:
   version: 1
   identity:
-    hostname: BR..OTNL.....
-    username: admcorp.ame
-    password: "Infr@c0rp@AME"
+    hostname: ubuntu-desktop
+    username: local-optimum
+    password: "$6$ZE4WV3QRJhPUnsNv$BpkTBYjUOxOiWV5sNPYDSitTwxW.3NHLmhRqptzpa8a4KTxGpkvMaSDbyq4PVri9kdpD1t7ldUBgwB6uveObg."
   storage:
     layout:
-      name: lvm and encryption
+      name: lvm
   snaps:
-    - name: 
+    - name: spotify
       classic: false
-    - name: 
+    - name: telegram-desktop
       classic: false
-    - name: 
+    - name: obsidian
       classic: true
     - name: code
       classic: true
   packages:
     - vim
   late-commands:
-  #Company Portal
-    - curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-    - sudo install -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/
-    - curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/24.04/prod.list
-    - sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    - curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
-    - sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
-    - sudo apt update && sudo apt install microsoft-edge-stable -y
-    - sudo apt install intune-portal -y
+    - curtin in-target -- wget https://repo2.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb
+    - curtin in-target -- dpkg -i ./protonvpn-stable-release_1.0.3-3_all.deb
+    - curtin in-target -- apt update
+    - curtin in-target -- apt install -y proton-vpn-gnome-desktop
