@@ -1,9 +1,9 @@
 autoinstall:
   version: 1
   identity:
-    hostname: ubuntu-desktop
-    username: local-optimum
-    password: "$6$ZE4WV3QRJhPUnsNv$BpkTBYjUOxOiWV5sNPYDSitTwxW.3NHLmhRqptzpa8a4KTxGpkvMaSDbyq4PVri9kdpD1t7ldUBgwB6uveObg."
+    hostname: BROTNL
+    username: admcorp.ame
+    password: "$6$aNKiTGTiB1.9./Bi$xTqgQqLFN2385QM3cCV3EIBIps22nsBPR5IJIl42pVdQI6Tp58v/oE.opC6gQM/opNjJ4cO.KXzUlAjMhbRO.."
   storage:
     layout:
       name: lvm
