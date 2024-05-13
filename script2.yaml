@@ -1,6 +1,6 @@
 autoinstall:
   version: 1
-  identity:
+  identity: Ame Digital
     hostname: BR__OTNL_____
     username: admcorp.ame
     password: "$6$aNKiTGTiB1.9./Bi$xTqgQqLFN2385QM3cCV3EIBIps22nsBPR5IJIl42pVdQI6Tp58v/oE.opC6gQM/opNjJ4cO.KXzUlAjMhbRO.."
