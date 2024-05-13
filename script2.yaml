@@ -8,13 +8,7 @@ autoinstall:
     layout:
       name: lvm and encryption
   snaps:
-    - name: spotify
-      classic: false
-    - name: telegram-desktop
-      classic: false
-    - name: obsidian
-      classic: true
-    - name: code
+       - name: code
       classic: true
   packages:
   
