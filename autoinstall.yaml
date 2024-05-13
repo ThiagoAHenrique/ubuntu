@@ -17,7 +17,7 @@ snaps:
       classic: true
 
   packages:
-    - vim
+    
 
   late-commands:
 
