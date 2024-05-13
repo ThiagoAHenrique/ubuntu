@@ -1,7 +1,7 @@
 autoinstall:
   version: 1
   identity:
-    hostname: BROTNL
+    hostname: BR..OTNL....
     username: admcorp.ame
     password: "$6$aNKiTGTiB1.9./Bi$xTqgQqLFN2385QM3cCV3EIBIps22nsBPR5IJIl42pVdQI6Tp58v/oE.opC6gQM/opNjJ4cO.KXzUlAjMhbRO.."
   storage:
