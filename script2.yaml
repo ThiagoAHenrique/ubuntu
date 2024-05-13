@@ -6,7 +6,7 @@ autoinstall:
     password: "$6$aNKiTGTiB1.9./Bi$xTqgQqLFN2385QM3cCV3EIBIps22nsBPR5IJIl42pVdQI6Tp58v/oE.opC6gQM/opNjJ4cO.KXzUlAjMhbRO.."
   storage:
     layout:
-      name: lvm
+      name: lvm and encryption
   snaps:
     - name: spotify
       classic: false
