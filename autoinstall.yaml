@@ -10,7 +10,7 @@ autoinstall:
 
  storage:
     layout:
-      name: lvm and encryption
+      name: lvm 
   
 snaps:
       - name: code
